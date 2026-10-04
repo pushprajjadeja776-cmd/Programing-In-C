@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+    int a, b, c, largest;
+
+    clrscr();
+
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    largest = a;
+
+    if (b > largest)
+        largest = b;
+
+    if (c > largest)
+        largest = c;
+
+    printf("Largest number = %d", largest);
+
+    getch();
+}
